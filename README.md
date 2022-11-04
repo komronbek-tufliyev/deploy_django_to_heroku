@@ -72,6 +72,7 @@ env.read_env()
 
 ```
 Rasmi: ![Environs-settings](./readme_src/environs.png)
+```python
 
 1. DEBUG = env.bool('DJANGO_DEBUG', default=False)
 2. ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', default=['*'])
@@ -94,13 +95,14 @@ Rasmi: ![Environs-settings](./readme_src/environs.png)
 9. STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+```
 
 ## Procfile fayli
 `Procfile` faylida `web: gunicorn config.wsgi --log-file -` yozib saqlang. `config.wsgi` fayl nomi sizning proyekt nomingiz bo'lishi kerak.
 
 ## Gitignore
 .gitignore faylida yaratib unga quyidagi qatorlarni qo'shing:
-```
+```gitignore
 .env
 *.pyc
 __pycache__
