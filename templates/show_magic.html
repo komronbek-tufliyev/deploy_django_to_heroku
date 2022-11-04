@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/magic.css' %}">
+{% endblock %}
+
+{% block title %}
+    Magic
+{% endblock%}
+
+{% block content %}
+
+<!-- Path: templates\show_magic.html -->
+<div id="canvas_container"></div>
+
+<!-- <button id="fullscr">Go Fullscreen</button> -->
+
+{% endblock %}
+
+{% block script %} 
+    <script src="{% static 'js/index.js' %}" type="text/javascript"></script>
+{% endblock %}
